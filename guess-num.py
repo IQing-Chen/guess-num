@@ -20,4 +20,4 @@ while True:
 		print("比答案大")
 	elif num < r:
 		print("比答案小")
-	print("這次是你猜的第", count, "次")	
+	print("這次是你猜的第", count, "次")
