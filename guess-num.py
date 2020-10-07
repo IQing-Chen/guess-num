@@ -5,17 +5,19 @@
 
 import random
 
-r = random.randint(1, 100)
+start = int(input("請決定隨機數字範圍的開始值："))
+end = int(input("請決定隨機數字範圍的結束值："))
+r = random.randint(start, end)
+count = 0 #計算猜了多少次
 while True:
+	count += 1  #count = count + 1
 	num = int(input("請猜數字：")
 	if num == r:
 		print("你猜對了")
+		print("用了", count, "次猜中")
 		break
 	elif num > r:
 		print("比答案大")
 	elif num < r:
-		print("比答案小")	
-
-
-
-#這是測試用的
+		print("比答案小")
+	print("這次是你猜的第", count, "次")	
