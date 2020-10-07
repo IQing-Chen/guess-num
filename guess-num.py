@@ -15,3 +15,7 @@ while True:
 		print("比答案大")
 	elif num < r:
 		print("比答案小")	
+
+
+
+#這是測試用的
